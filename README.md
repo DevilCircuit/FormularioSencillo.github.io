@@ -1,0 +1,1 @@
+Todo archivo esta sujeto a la propiedad intelectuals

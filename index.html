@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Sencillo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contenedor-formulario {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Para que el padding no afecte el ancho */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h2>Cuéntanos sobre ti</h2>
+        <form action="#" method="POST">
+            
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
+
+            <label for="fecha">Fecha de cumpleaños:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="animal">Animal favorito:</label>
+            <input type="text" id="animal" name="animal" placeholder="Ej: Perro, Gato, Delfín...">
+
+            <button type="submit">Enviar datos</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
